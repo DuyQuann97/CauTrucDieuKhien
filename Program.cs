@@ -48,7 +48,6 @@ namespace CauTrucDieuKhien
             //{
             //    Console.Write("Bang cuu chuong muon hien thi: ");
             //    int n = int.Parse(Console.ReadLine());
-
             //    for (int i = 1;i <= n; i++) 
             //    {
             //        for (int j = 1; j < 11; j++)
@@ -59,7 +58,6 @@ namespace CauTrucDieuKhien
             //        Console.WriteLine("---------------");
             //        Console.WriteLine();
             //    }
-
             //    Console.WriteLine("Ban co muon tiep tuc Chuong Trinh ko ? (Y/N)");
             //    string tiepTuc = Console.ReadLine().ToLower();
             //    if (tiepTuc == "n")
@@ -74,7 +72,6 @@ namespace CauTrucDieuKhien
             //Console.Write("Nhap so n: ");
             //int n = int.Parse(Console.ReadLine());
             //double tongGiaiThua = 0;
-
             //for (int i = 1; i <= n; i++)
             //{
             //    double GiaiThua = 1;
@@ -84,9 +81,9 @@ namespace CauTrucDieuKhien
             //    }
             //    tongGiaiThua += GiaiThua;
             //}
-
             //Console.WriteLine("Tong giai thua tu 1 den {0} la {1}",n,tongGiaiThua);
             //Console.ReadKey();
+
 
             //Bài 4: Viết chương trình nhập vào số nguyên từ bàn phím, kiểm tra xem số đó có phải là số chính phương hay không.Hiển thị kết quả đạt được ra màn hình.
             //Console.WriteLine("Kiem tra so chinh phuong");
@@ -96,7 +93,6 @@ namespace CauTrucDieuKhien
             //    Console.Write("Nhap so muon kiem tra: ");
             //    int n = int.Parse(Console.ReadLine());
             //    double sqrt = Math.Sqrt(n);
-
             //    if (Math.Pow(sqrt,2) == n)
             //    {
             //        Console.WriteLine("{0} la so chinh Phuong", n);
@@ -105,8 +101,6 @@ namespace CauTrucDieuKhien
             //    {
             //        Console.WriteLine("{0} ko phai la so chinh Phuong", n);
             //    }
-
-
             //    Console.WriteLine("Ban co muon tiep tuc Chuong Trinh ko ? (Y/N)");
             //    string tiepTuc = Console.ReadLine().ToLower();
             //    if (tiepTuc == "n")
