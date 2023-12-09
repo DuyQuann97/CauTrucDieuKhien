@@ -284,7 +284,23 @@ namespace CauTrucDieuKhien
 
 
             //Bài 10: Nhập vào số nguyên dương n, tính toán và hiển thị dãy Fibonacci ra màn hình.
-            
+            //Console.Write("Nhap so nguyen n: ");
+            //int n = int.Parse(Console.ReadLine());
+            //int count = 0;
+            //int number1 = 0;
+            //int number2 = number1 + 1;
+            //int number3 = number2 + number1;
+
+            //Console.WriteLine("Day so voi {0} phan tu :",n);
+            //while (count <= n)
+            //{
+            //    if(number1 != 0) Console.Write("{0} ",number1);
+            //    number1 = number2;
+            //    number2 = number3;
+            //    number3 = number1 + number2;
+            //    count++;
+            //}
+            //Console.ReadKey();
         }
     }
 }
