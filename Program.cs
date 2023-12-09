@@ -109,6 +109,182 @@ namespace CauTrucDieuKhien
             //    }
             //} while (dungChuongTrinh);
 
+
+            //Bài 5: Viết chương trình nhập vào tháng bất kỳ từ bàn phím, hiển thị số ngày có trong tháng ra màn hình.
+            //Console.WriteLine("Hien thi so ngay cua thang");
+            //bool dungChuongTrinh = true;
+            //do
+            //{
+            //    Console.Write("Nhap thang muon hien thi: ");
+            //    int thang = int.Parse(Console.ReadLine());
+            //    switch(thang) 
+            //    {
+            //        case 1:
+            //        case 3:
+            //        case 5:
+            //        case 7:
+            //        case 8:
+            //        case 10:
+            //        case 12:
+            //            Console.WriteLine("Thang {0} co 31 ngay",thang);
+            //            break;
+            //        case 4:
+            //        case 6:
+            //        case 9:
+            //        case 11:
+            //            Console.WriteLine("Thang {0} co 30 ngay", thang);
+            //            break;
+            //        case 2:
+            //            Console.WriteLine("Thang {0} co 28 ngay va 29 ngay vao LeapYear", thang);
+            //            break;
+            //        default:
+            //            Console.WriteLine("Thang nhap khong hop le");
+            //            break;
+            //    }
+            //    Console.WriteLine("Ban co muon tiep tuc Chuong Trinh ko ? (Y/N)");
+            //    string tiepTuc = Console.ReadLine().ToLower();
+            //    if (tiepTuc == "n")
+            //    {
+            //        dungChuongTrinh = false;
+            //    }
+            //} while (dungChuongTrinh);
+
+
+            //Bài 6 :Viết chương trình nhập vào số nguyên n, tính tổng S theo công thức sau và hiển thị kết quả ra màn hình.
+            //Console.WriteLine("Tinh Tong S theo cong thuc");
+            //bool dungChuongTrinh = true;
+            //do
+            //{
+            //    Console.Write("Nhap so nguyen n: ");
+            //    int n = int.Parse(Console.ReadLine());
+            //    double tong = 0;
+
+            //    for (int i = 1; i <= n; i++)
+            //    {
+            //        tong += Math.Pow(i,i);
+            //    }
+
+            //    Console.WriteLine("Ket qua la {0}",tong);
+            //    Console.WriteLine("Ban co muon tiep tuc Chuong Trinh ko ? (Y/N)");
+            //    string tiepTuc = Console.ReadLine().ToLower();
+            //    if (tiepTuc == "n")
+            //    {
+            //        dungChuongTrinh = false;
+            //    }
+            //} while (dungChuongTrinh);
+
+
+            //Bài 7: Viết chương trình nhập vào số nguyên n, tính tổng các số lẽ từ 1 đến n và hiển thị kết quả ra màn hình.
+            //Console.WriteLine("Tinh tong so le tu 1 den n");
+            //bool dungChuongTrinh = true;
+            //do
+            //{
+            //    Console.Write("Nhap so nguyen n: ");
+            //    int n = int.Parse(Console.ReadLine());
+            //    double tong = 0;
+
+            //    for (int i = 1; i <= n; i++)
+            //    {
+            //        if (i % 2 != 0)
+            //        {
+            //            tong += i;
+            //        }
+            //    }
+
+            //    Console.WriteLine("Ket qua la {0}", tong);
+            //    Console.WriteLine("Ban co muon tiep tuc Chuong Trinh ko ? (Y/N)");
+            //    string tiepTuc = Console.ReadLine().ToLower();
+            //    if (tiepTuc == "n")
+            //    {
+            //        dungChuongTrinh = false;
+            //    }
+            //} while (dungChuongTrinh);
+
+            //Bài 8: Nhập vào số nguyên dương n, hiển thị ra màn hình các số nguyên tố từ 1 đến n.
+            //Console.WriteLine("Hien thi cac so nguyen to tu 1 den n");
+            //bool dungChuongTrinh = true;
+            //do
+            //{
+            //    Console.Write("Nhap so nguyen duong: ");
+            //    int n = int.Parse(Console.ReadLine());
+
+            //    for (int i = 2; i <= n; i++)
+            //    {
+            //        if (i != 2 && i != 3)
+            //        {
+            //            if (i % 2 == 0 || i % 3 == 0) continue;
+            //        }
+            //        Console.Write("{0} ",i);
+            //    }
+
+            //    Console.WriteLine();
+            //    Console.WriteLine("Ban co muon tiep tuc Chuong Trinh ko ? (Y/N)");
+            //    string tiepTuc = Console.ReadLine().ToLower();
+            //    if (tiepTuc == "n")
+            //    {
+            //        dungChuongTrinh = false;
+            //    }
+            //} while (dungChuongTrinh);
+
+
+            //Bài 9: Viết chương trình nhập vào số hàng n, vẽ tam giác * với số hàng tương ứng. Ví dụ, nhập vào 10 hàng, thì ta sẽ được 1 tam giác như hình bên dưới.
+            // Có thể thử vẽ thêm với hình tam giác đều, tam giác xoay ngược.
+
+            //Tam Giac
+            //Console.WriteLine("Ve tam giac * voi so hang tuong ung");
+            //bool dungChuongTrinh = true;
+            //do
+            //{
+            //    Console.Write("Nhap so hang: ");
+            //    int n = int.Parse(Console.ReadLine());
+            //    string tamGiac = "";
+            //    for (int i = 1; i <= n; i++)
+            //    {
+            //        tamGiac += "*";
+            //        Console.WriteLine(tamGiac);
+            //    }
+
+            //    Console.WriteLine();
+            //    Console.WriteLine("Ban co muon tiep tuc Chuong Trinh ko ? (Y/N)");
+            //    string tiepTuc = Console.ReadLine().ToLower();
+            //    if (tiepTuc == "n")
+            //    {
+            //        dungChuongTrinh = false;
+            //    }
+            //} while (dungChuongTrinh);
+
+
+            //Tam Giac Nguoc
+            //Console.WriteLine("Ve tam giac nguoc * voi so hang tuong ung");
+            //bool dungChuongTrinh = true;
+            //do
+            //{
+            //    Console.Write("Nhap so hang: ");
+            //    int n = int.Parse(Console.ReadLine());
+            //    string tamGiac = "";
+            //    for (int i = 0; i <= n; i++)
+            //    {
+            //        tamGiac += "*";
+            //    }
+
+            //    for (int i = tamGiac.Length - 1; i > 0; i--)
+            //    {
+            //        tamGiac = tamGiac.Remove(i);
+            //        Console.WriteLine(tamGiac);
+            //    }
+
+            //    Console.WriteLine();
+            //    Console.WriteLine("Ban co muon tiep tuc Chuong Trinh ko ? (Y/N)");
+            //    string tiepTuc = Console.ReadLine().ToLower();
+            //    if (tiepTuc == "n")
+            //    {
+            //        dungChuongTrinh = false;
+            //    }
+            //} while (dungChuongTrinh);
+
+
+            //Bài 10: Nhập vào số nguyên dương n, tính toán và hiển thị dãy Fibonacci ra màn hình.
+            
         }
     }
 }
