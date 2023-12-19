@@ -13,8 +13,8 @@ namespace CauTrucDieuKhien
             while (true)
             {
                 DanhSachBaiTap();
-                int selectMenu = int.Parse(Console.ReadLine());
-                switch (selectMenu)
+                int userInput = Input();
+                switch (userInput)
                 {
                     case 1:
                         BaiTap1();
@@ -54,6 +54,7 @@ namespace CauTrucDieuKhien
                 if(stop) break;
             }
         }
+        
         public static void DanhSachBaiTap()
         {
             Console.WriteLine("Bai Tap ve Cau Truc Dieu Khien");
@@ -68,24 +69,37 @@ namespace CauTrucDieuKhien
             Console.WriteLine("8 - Nhap so nguyen n, hien thi ra man hinh cac so nguyen tu 1 dne n");
             Console.WriteLine("9 - Nhap so nguyen n, ve tam giac voi so hang tuong ung");
             Console.WriteLine("10- Nhap so nguyen n,tinh toan va hien thi day so Fibonacci");
+            Console.WriteLine();
         }
 
         public static bool DungChuongTrinh()
         {
             Console.WriteLine();
             Console.WriteLine("Nhan phim bat de tiep tuc Chuong trinh ");
-            Console.WriteLine("Nhan phim N de thoat chuong trinh");
-            string str = Console.ReadLine().ToLower();
-            if (str == "n") return true;
+            Console.WriteLine("Nhan phim ESC de thoat chuong trinh");
+            ConsoleKeyInfo str = Console.ReadKey();
+            if (str.Key == ConsoleKey.Escape) return true;
             Console.Clear();
             return false;
+        }
+        public static int Input() 
+        {
+            int userInput = 0;
+            try 
+            {
+                userInput = int.Parse(Console.ReadLine());
+            }catch (Exception e) 
+            {
+                Console.WriteLine(e.Message); 
+            }
+            return userInput;
         }
         public static void BaiTap1()
         {
             //Bài 1: Viết chương trình nhập vào số nguyên và kiểm tra xem số đô có chia hết cho 3 hay không. Hiển thị ra kết quả
             Console.WriteLine("Kiem tra so chia het cho 3");
             Console.Write("Moi nhap so nguyen: ");
-            int n = int.Parse(Console.ReadLine());
+            int n = Input();
             if (n > 0)
             {
                 if (n % 3 == 0)
@@ -107,7 +121,7 @@ namespace CauTrucDieuKhien
             //Bài 2: Nhập vào số nguyên dương n, hiển thị bảng cửu chương từ 1 đến n ra màn hình
             Console.WriteLine("Hien thi bang cuu chuong");
             Console.Write("Bang cuu chuong muon hien thi: ");
-            int n = int.Parse(Console.ReadLine());
+            int n = Input();
             for (int i = 1; i <= n; i++)
             {
                 for (int j = 1; j < 11; j++)
@@ -124,7 +138,7 @@ namespace CauTrucDieuKhien
             //Bài 3:Nhập vào số nguyên dương từ n từ bàn phím, tính tổng giai thừa từ 1 đến n và hiển thị kết quả ra màn hình
             Console.WriteLine("Tinh Tong Gia Thua");
             Console.Write("Nhap so n: ");
-            int n = int.Parse(Console.ReadLine());
+            int n = Input();
             double tongGiaiThua = 0;
             for (int i = 1; i <= n; i++)
             {
@@ -143,7 +157,7 @@ namespace CauTrucDieuKhien
             //Bài 4: Viết chương trình nhập vào số nguyên từ bàn phím, kiểm tra xem số đó có phải là số chính phương hay không.Hiển thị kết quả đạt được ra màn hình.
             Console.WriteLine("Kiem tra so chinh phuong");
             Console.Write("Nhap so muon kiem tra: ");
-            int n = int.Parse(Console.ReadLine());
+            int n = Input();
             double sqrt = Math.Sqrt(n);
             if (Math.Pow(sqrt, 2) == n)
             {
@@ -159,7 +173,7 @@ namespace CauTrucDieuKhien
             //Bài 5: Viết chương trình nhập vào tháng bất kỳ từ bàn phím, hiển thị số ngày có trong tháng ra màn hình.
             Console.WriteLine("Hien thi so ngay cua thang");
             Console.Write("Nhap thang muon hien thi: ");
-            int thang = int.Parse(Console.ReadLine());
+            int thang = Input();
             switch (thang)
             {
                 case 1:
@@ -190,7 +204,7 @@ namespace CauTrucDieuKhien
             //Bài 6 :Viết chương trình nhập vào số nguyên n, tính tổng S theo công thức sau và hiển thị kết quả ra màn hình.
             Console.WriteLine("Tinh Tong S theo cong thuc");
             Console.Write("Nhap so nguyen n: ");
-            int n = int.Parse(Console.ReadLine());
+            int n = Input();
             double tong = 0;
 
             for (int i = 1; i <= n; i++)
@@ -205,7 +219,7 @@ namespace CauTrucDieuKhien
             //Bài 7: Viết chương trình nhập vào số nguyên n, tính tổng các số lẽ từ 1 đến n và hiển thị kết quả ra màn hình.
             Console.WriteLine("Tinh tong so le tu 1 den n");
             Console.Write("Nhap so nguyen n: ");
-            int n = int.Parse(Console.ReadLine());
+            int n = Input();
             double tong = 0;
 
             for (int i = 1; i <= n; i++)
@@ -223,7 +237,7 @@ namespace CauTrucDieuKhien
             //Bài 8: Nhập vào số nguyên dương n, hiển thị ra màn hình các số nguyên tố từ 1 đến n.
             Console.WriteLine("Hien thi cac so nguyen to tu 1 den n");
             Console.Write("Nhap so nguyen duong: ");
-            int n = int.Parse(Console.ReadLine());
+            int n = Input();
 
             for (int i = 2; i <= n; i++)
             {
@@ -242,7 +256,7 @@ namespace CauTrucDieuKhien
             //Tam Giac
             Console.WriteLine("Ve tam giac * voi so hang tuong ung");
             Console.Write("Nhap so hang: ");
-            int n = int.Parse(Console.ReadLine());
+            int n = Input();
             string tamGiac = "";
             for (int i = 1; i <= n; i++)
             {
@@ -268,7 +282,7 @@ namespace CauTrucDieuKhien
         {
             //Bài 10: Nhập vào số nguyên dương n, tính toán và hiển thị dãy Fibonacci ra màn hình.
             Console.Write("Nhap so nguyen n: ");
-            int n = int.Parse(Console.ReadLine());
+            int n = Input();
             int count = 0;
             int number1 = 0;
             int number2 = number1 + 1;
