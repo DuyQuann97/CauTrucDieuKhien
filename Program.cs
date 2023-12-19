@@ -51,10 +51,9 @@ namespace CauTrucDieuKhien
                         break;
                 }
                 bool stop = DungChuongTrinh();
-                if(stop) break;
+                if (stop) break;
             }
         }
-        
         public static void DanhSachBaiTap()
         {
             Console.WriteLine("Bai Tap ve Cau Truc Dieu Khien");
@@ -71,7 +70,6 @@ namespace CauTrucDieuKhien
             Console.WriteLine("10- Nhap so nguyen n,tinh toan va hien thi day so Fibonacci");
             Console.WriteLine();
         }
-
         public static bool DungChuongTrinh()
         {
             Console.WriteLine();
@@ -82,15 +80,16 @@ namespace CauTrucDieuKhien
             Console.Clear();
             return false;
         }
-        public static int Input() 
+        public static int Input()
         {
             int userInput = 0;
-            try 
+            try
             {
                 userInput = int.Parse(Console.ReadLine());
-            }catch (Exception e) 
+            }
+            catch (Exception e)
             {
-                Console.WriteLine(e.Message); 
+                Console.WriteLine(e.Message);
             }
             return userInput;
         }
@@ -142,14 +141,14 @@ namespace CauTrucDieuKhien
             double tongGiaiThua = 0;
             for (int i = 1; i <= n; i++)
             {
-               double GiaiThua = 1;
-               for (int j = 1; j <= i; j++)
-               {
-                   GiaiThua *= j;
-               }
-               tongGiaiThua += GiaiThua;
+                double GiaiThua = 1;
+                for (int j = 1; j <= i; j++)
+                {
+                    GiaiThua *= j;
+                }
+                tongGiaiThua += GiaiThua;
             }
-            Console.WriteLine("Tong giai thua tu 1 den {0} la {1}",n,tongGiaiThua);
+            Console.WriteLine("Tong giai thua tu 1 den {0} la {1}", n, tongGiaiThua);
             Console.ReadKey();
         }
         public static void BaiTap4()
